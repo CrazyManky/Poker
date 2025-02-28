@@ -439,7 +439,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 461627082522813874}
         m_TargetAssemblyTypeName: _Project.Scripts.Screens.MenuScreen, Assembly-CSharp
-        m_MethodName: ShowShopScreen
+        m_MethodName: ShowRewardScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -571,7 +571,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 461627082522813874}
         m_TargetAssemblyTypeName: _Project.Scripts.Screens.MenuScreen, Assembly-CSharp
-        m_MethodName: ShowRecordsScreen
+        m_MethodName: ShowLeaderScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

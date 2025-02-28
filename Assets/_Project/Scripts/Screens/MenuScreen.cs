@@ -8,10 +8,10 @@ namespace _Project.Scripts.Screens
             Dialog.ShowSettingsScreen();
         }
 
-        public void ShowShopScreen()
+        public void ShowLeaderScreen()
         {
             // AudioManager.PlayButtonClick();
-            Dialog.ShowShopScreen();
+            Dialog.ShowLeaderScreen();
         }
 
         public void ShowGameScreen()
@@ -20,10 +20,9 @@ namespace _Project.Scripts.Screens
             // Dialog.ShowLevelScreen();
         }
 
-        public void ShowRecordsScreen()
+        public void ShowRewardScreen()
         {
-            // AudioManager.PlayButtonClick();
-            Dialog.ShowShopScreen();
+            
         }
     }
 }
