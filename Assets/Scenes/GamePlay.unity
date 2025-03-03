@@ -172,14 +172,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.53333336}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.29411766}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5cd1c89324351614d8775b233ab8d87a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c4b3e3b6bca96143a46298bd5bea86b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1266, y: 2622}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.8
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -316,6 +316,8 @@ MonoBehaviour:
   _settingsScreen: {fileID: 8163012616107711806, guid: 25c98cbd1ce4cac41bae695897d8a274, type: 3}
   _leaderboardScreen: {fileID: 3218051174198204951, guid: 0ed8ca55e4a113e49b6dbb1a43163c51, type: 3}
   _audioManager: {fileID: 519420036}
+  _gamePlayScreen: {fileID: 4949441593280746070, guid: c9367d67ffbc92d41accc1c28a78186a, type: 3}
+  _rewardScreen: {fileID: 5810438289712860463, guid: 4e15270cb932e664891e8dd380769641, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,14 +421,14 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f8f00e61afbc85c48ac411b8b35f9b7c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -520,7 +522,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -616,7 +618,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -712,7 +714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5099dc77a604cd4c935dcb79757b90f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundConfig: {fileID: 0}
+  _soundConfig: {fileID: 11400000, guid: 326e4a0477270dc40aada9b42ddf4358, type: 2}
   _buttonClickListener: {fileID: 519420035}
   _gameSound: {fileID: 519420034}
   _menuMusic: {fileID: 519420033}

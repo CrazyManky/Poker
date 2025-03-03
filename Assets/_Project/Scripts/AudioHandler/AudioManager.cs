@@ -18,29 +18,31 @@ namespace _Project.Scripts.AudioHandler
 
         public void PlayGame()
         {
+            _menuMusic.Stop();
             _gameSound.Play();
         }
 
         public void PlayMenu()
         {
+            _gameSound.Stop();
             _menuMusic.Play();
         }
 
         private void Update()
         {
-          //  _soundConfig.GetSaveValue();
-            // if (!_soundConfig.SoundActive)
-            // {
-            //     _buttonClickListener.volume = 0f;
-            //     _gameSound.volume = 0f;
-            //     _menuMusic.volume = 0f;
-            // }
-            // else
-            // {
-            //     _buttonClickListener.volume = 0.1f;
-            //     _gameSound.volume = 0.1f;
-            //     _menuMusic.volume = 0.1f;
-            // }
+             _soundConfig.GetSaveValue();
+            if (!_soundConfig.SoundActive)
+            {
+                _buttonClickListener.volume = 0f;
+                _gameSound.volume = 0f;
+                _menuMusic.volume = 0f;
+            }
+            else
+            {
+                _buttonClickListener.volume = 0.1f;
+                _gameSound.volume = 0.1f;
+                _menuMusic.volume = 0.1f;
+            }
         }
     }
 }

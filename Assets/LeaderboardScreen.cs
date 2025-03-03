@@ -43,6 +43,7 @@ public class LeaderboardScreen : BaseScreen
 
     public void BackToMenu()
     {
+        AudioManager.PlayButtonClick();
         Dialog.ShowMenuScreen();
     }
 }

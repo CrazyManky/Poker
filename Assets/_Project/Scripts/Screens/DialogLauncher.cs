@@ -11,10 +11,10 @@ namespace _Project.Scripts.Screens
         [SerializeField] private SettingsScreen _settingsScreen;
         [SerializeField] private LeaderboardScreen _leaderboardScreen;
         [SerializeField] private AudioManager _audioManager;
-
+        [SerializeField] private GamePlayScreen _gamePlayScreen;
+        [SerializeField] private RewardScreen _rewardScreen;
 
         private BaseScreen _activeScreen;
-
 
         private void Awake()
         {
@@ -27,20 +27,20 @@ namespace _Project.Scripts.Screens
 
         public void ShowMenuScreen()
         {
-            // _audioManager.PlayMenu();
+            _audioManager.PlayMenu();
             ShowScreen(_menuScreen);
         }
 
         public void ShowSettingsScreen() => ShowScreen(_settingsScreen);
         public void ShowLeaderScreen() => ShowScreen(_leaderboardScreen);
-        // public void ShowLevelScreen() => ShowScreen(_levelScreen);
+        public void ShowRewardScreen() => ShowScreen(_rewardScreen);
 
-        // public void ShowGameScreen()
-        // {
-        //     _audioManager.PlayButtonClick();
-        //     _audioManager.PlayGame();
-        //     ShowScreen(_gameScreen);
-        // }
+        public void ShowGameScreen()
+        {
+            _audioManager.PlayButtonClick();
+            _audioManager.PlayGame();
+            ShowScreen(_gamePlayScreen);
+        }
 
         private void ShowScreen(BaseScreen screen)
         {

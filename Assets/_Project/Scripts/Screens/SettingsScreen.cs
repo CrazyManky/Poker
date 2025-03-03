@@ -1,5 +1,4 @@
 ﻿using _Project.Configs;
-using _Project.Screpts.Screns;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,27 +23,27 @@ namespace _Project.Scripts.Screens
 
         public void SwitchValueSound()
         {
-          //  AudioManager.PlayButtonClick();
+          AudioManager.PlayButtonClick();
             _audioManager.SetSound(!_audioManager.SoundActive);
             _imageSound.sprite = _audioManager.SoundActive ? _valueActive : _valueDisabled;
         }
 
         public void SwitchValueMusic()
         {
-           // AudioManager.PlayButtonClick();
+           AudioManager.PlayButtonClick();
             _audioManager.SetMusic(!_audioManager.MusicActive);
             _imageMusic.sprite = _audioManager.MusicActive ? _valueActive : _valueDisabled;
         }
 
         public void ShowPrivacyPolicy()
         {
-           // AudioManager.PlayButtonClick();
+           AudioManager.PlayButtonClick();
             Instantiate(_privacyPolicyScreen, _privacyPolicyContainer);
         }
 
         public void BackToMenu()
         {
-            //  AudioManager.PlayButtonClick();
+            AudioManager.PlayButtonClick();
             Dialog.ShowMenuScreen();
         }
     }

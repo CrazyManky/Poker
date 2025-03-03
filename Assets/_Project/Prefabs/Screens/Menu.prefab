@@ -119,7 +119,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8183216744505039534}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 461627082522813874}
+        m_TargetAssemblyTypeName: _Project.Scripts.Screens.MenuScreen, Assembly-CSharp
+        m_MethodName: ShowGameScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &527835163242823718
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +190,7 @@ MonoBehaviour:
     m_Bottom: 75
   m_ChildAlignment: 1
   m_Spacing: 95.51
-  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
@@ -632,6 +644,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac24220682777ea4b8ba33e964c4195a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _list:
+  - {fileID: 2231564562921878083, guid: fc1dd8ba6f0655e48838a92818300247, type: 3}
+  - {fileID: 840065391894882125, guid: 1e19381d0e1031745ab763ea0f5c7d3e, type: 3}
 --- !u!1001 &1166197144102114857
 PrefabInstance:
   m_ObjectHideFlags: 0
